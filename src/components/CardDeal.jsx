@@ -1,0 +1,26 @@
+import { card } from "../assets";
+import styles, { layout } from "../style";
+import Button from "./Button";
+
+const CardDeal = () => (
+  <section className={layout.section}>
+    <div className={layout.sectionInfo}>
+      <h2 className={styles.heading2}>
+        Find a better card deal <br className="sm:block hidden" /> in few easy
+        steps
+      </h2>
+      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      Acquire a credit card can be done in a few simple steps. First, open up a web browser and go to the desired credit card issuer’s website. Find the “Sign In” & click on the “Account” button and select the “Credit Cards” tab.
+
+      </p>
+
+      <Button styles={`mt-10`} />
+    </div>
+
+    <div className={layout.sectionImg}>
+      <img src={card} alt="billing" className="w-[100%] h-[100%]" />
+    </div>
+  </section>
+);
+
+export default CardDeal;
